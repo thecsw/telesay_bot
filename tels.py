@@ -2,7 +2,6 @@ from gtts import gTTS
 import os
 import telepot
 from telepot.loop import MessageLoop
-key = '461730776:AAHUE9Dr-_jxaZ3YZtub_zYQfu4oZVlSDyE'
 bot = telepot.Bot(key)
 
  
