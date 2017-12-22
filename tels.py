@@ -11,6 +11,7 @@ def handle(msg):
     command = msg['text'].encode('utf-8').lower() # Support lowercase
     tts = gTTS(text=command, lang='en')
     tts.save("{}.mp3".format(command))
+    bot.sendChatAction(user_id, 'upload_audio')
     bot.sendVoice(user_id, open("{}.mp3".format(command)))
 
     try:
