@@ -27,4 +27,5 @@ Send any text to him and he will send you a computer-generated voice.")
         os.remove('{}.mp3'.format(command))
     except:
         pass
+    
 MessageLoop(bot, handle).run_forever()
