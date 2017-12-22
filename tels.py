@@ -2,7 +2,6 @@ from gtts import gTTS
 import os
 import telepot
 from telepot.loop import MessageLoop
-<<<<<<< HEAD
 import config
 bot = telepot.Bot(config.key)
  
