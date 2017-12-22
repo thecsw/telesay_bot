@@ -2,8 +2,8 @@ from gtts import gTTS
 import os
 import telepot
 from telepot.loop import MessageLoop
-bot = telepot.Bot(key)
-
+import config
+bot = telepot.Bot(config.key)
  
 def handle(msg):
     user_id = msg['chat']['id']
