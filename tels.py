@@ -5,11 +5,6 @@ from telepot.loop import MessageLoop
 <<<<<<< HEAD
 import config
 bot = telepot.Bot(config.key)
-=======
-key = ''
-bot = telepot.Bot(key)
-
->>>>>>> ed7f4114f996e3a21425d950ce6af1dc4b81b3db
  
 def handle(msg):
     user_id = msg['chat']['id']
