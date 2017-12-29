@@ -25,7 +25,7 @@ Send any text to him and he will send you a computer-generated voice.")
         return
         
     if len(command) > 128:
-        say_exit(user_id, "Too many characters. Limit = 128.")
+        say_exit(user_id, "Too many characters ({}). Limit = 128.".format(len(command)))
         return
     
     bot.sendMessage(user_id, "Processing... Please wait.")
