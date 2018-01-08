@@ -53,7 +53,7 @@ Config file is ready and you are good to go!
 Just run this
 
 ```bash
-python rjokes.py
+python tels.py
 ```
 
 That is everything. The script now just runs and any user that is connected to your Telegram bot can request a joke via the /joke command.
