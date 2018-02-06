@@ -3,7 +3,6 @@ import os
 import telepot
 from telepot.loop import MessageLoop
 import config
-bot = telepot.Bot(config.key)
 
 def say_exit(user_id, text):
     bot.sendMessage(user_id, text)
@@ -38,5 +37,9 @@ Send any text to him and he will send you a computer-generated voice.")
         os.remove('{}.mp3'.format(command))
     except:
         pass
-    
-MessageLoop(bot, handle).run_forever()
+
+if __name__ == "__main__":
+    bot = telepot.Bot(config.key)    
+    MessageLoop(bot, handle).run_forever()
+else:
+    pass
